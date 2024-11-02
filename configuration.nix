@@ -62,7 +62,7 @@
   };
   services.pcscd.enable = true; 
   
-  
+
   # Enable flatpak
   services.flatpak.enable = true; 
   xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
@@ -126,20 +126,20 @@
   
   environment.systemPackages = with pkgs; [
  # vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    	wget
-    	pkgs.thunderbirdPackages.thunderbird-115
-    	pkgs.flatpak
-    	pkgs.vlc
-    	pkgs.samba4Full
-    	pkgs.qbittorrent
-	pkgs.vscodium
-	pkgs.google-chrome
-	pkgs.onlyoffice-bin
-	pkgs.syncthing
-	pkgs.logseq
-	pkgs.gnupg
-	pkgs.pinentry-qt
-	pkgs.veracrypt
+    wget
+    pkgs.thunderbirdPackages.thunderbird-115
+    pkgs.flatpak
+    pkgs.vlc
+    pkgs.samba4Full
+    pkgs.qbittorrent
+	  pkgs.vscodium
+	  pkgs.google-chrome
+	  pkgs.onlyoffice-bin
+	  pkgs.syncthing
+	  pkgs.logseq
+	  pkgs.gnupg
+	  pkgs.pinentry-qt
+	  pkgs.veracrypt
   ];
 
   

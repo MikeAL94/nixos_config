@@ -123,6 +123,13 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
+
+    nixpkgs.config.permittedInsecurePackages = [
+                "electron-27.3.11"
+		"thunderbird-unwrapped-115.16.0esr"
+
+
+		];
   
   environment.systemPackages = with pkgs; [
  # vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
@@ -143,39 +150,6 @@
   ];
 
   
-  nixpkgs.config.permittedInsecurePackages = [
-                "electron-27.3.11"
-		"thunderbird-unwrapped-115.16.0esr"
-
-
-		];
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 # Some programs need SUID wrappers, can be configured further or are
